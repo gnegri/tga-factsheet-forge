@@ -9,9 +9,6 @@ import PortfolioAllocation from '@/components/PortfolioAllocation';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  // Create base64 TGA logo
-  const tgaLogo = `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTIwIDIwSDQxLjk3TDMwLjk3IDgwSDEwTDIwIDIwWiIgZmlsbD0iIzJDNUY1RCIvPgogIDxwYXRoIGQ9Ik01MCAxMEMzMC42NSAxMCAxNSAyNS42NSAxNSA0NUMxNSA2NC4zNSAzMC42NSA4MCA1MCA4MEM2OS4zNSA4MCA4NSA2NC4zNSA4NSA0NUM4NSAyNS42NSA2OS4zNSAxMCA1MCAxMFpNNTAgNzBDMzYuMTkgNzAgMjUgNTguODEgMjUgNDVDMjUgMzEuMTkgMzYuMTkgMjAgNTAgMjBDNjMuODEgMjAgNzUgMzEuMTkgNzUgNDVDNzUgNTguODEgNjMuODEgNzAgNTAgNzBaIiBmaWxsPSIjMkM1RjVEIi8+CiAgPHBhdGggZD0iTTU5IDU1TDcwIDIwSDkwTDgwIDgwSDYwTDcwIDU1SDU5WiIgZmlsbD0iIzRBNEE0QSIvPgo8L3N2Zz4=`;
-
   useEffect(() => {
     // Update document title
     document.title = 'TGA Fund SICAV | Factsheet';
@@ -20,7 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-tga-background py-8 print:py-0 print:bg-white">
       <div className="factsheet-container">
-        <Header logo={tgaLogo} />
+        <Header />
         <FundDescription />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <KeyInformation />

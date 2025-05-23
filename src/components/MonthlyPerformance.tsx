@@ -45,14 +45,14 @@ const MonthlyPerformance: React.FC = () => {
   // Function to determine cell color based on value
   const getCellColor = (value: string) => {
     const numValue = parseFloat(value);
-    if (isNaN(numValue)) return 'bg-white';
-    if (numValue > 0) return 'text-green-700';
-    if (numValue < 0) return 'text-red-700';
-    return '';
+    if (isNaN(numValue)) return '';
+    if (numValue > 0) return 'performance-positive';
+    if (numValue < 0) return 'performance-negative';
+    return 'performance-neutral';
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg mb-6 p-4 print:shadow-none">
+    <div className="bg-white shadow-tga rounded-lg mb-6 p-4 print:shadow-none">
       <h2 className="text-xl font-semibold text-tga-primary mb-3">Monthly Performance (%)</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-200 text-sm">

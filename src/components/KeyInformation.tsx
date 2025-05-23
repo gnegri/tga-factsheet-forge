@@ -31,12 +31,12 @@ const KeyInformation: React.FC = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg mb-6 p-4 print:shadow-none">
+    <div className="bg-white shadow-tga rounded-lg mb-6 p-4 print:shadow-none">
       <h2 className="text-xl font-semibold text-tga-primary mb-3">Fund Information</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {keyInfo.map((item, index) => (
           <div key={index} className="mb-2">
-            <div className="text-sm font-semibold text-tga-gray">{item.field}</div>
+            <div className="text-sm font-semibold text-tga-accent">{item.field}</div>
             <EditableField
               value={item.value}
               onChange={(value) => updateKeyInfo(index, value)}

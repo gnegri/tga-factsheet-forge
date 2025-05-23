@@ -54,12 +54,16 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
                 tga: {
-                    primary: '#2C5F5D',
-                    secondary: '#1A4A47',
-                    gray: '#4A4A4A',
+                    primary: '#2E6B6A', // Updated teal color
+                    secondary: '#1A4847', // Updated dark teal
+                    accent: '#4A4A4A', // Gray from the "A"
                     darkgray: '#333333',
-                    text: '#2D2D2D',
-                    background: '#F8F9FA'
+                    lightgray: '#6B7280',
+                    text: '#1F2937', // Updated text color
+                    background: '#F9FAFB', // Updated background color
+                    success: '#10B981', // Green for positive performance
+                    warning: '#F59E0B', // Orange for warnings
+                    error: '#EF4444' // Red for negative performance
                 },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -79,6 +83,9 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'tga': '0 4px 6px -1px rgba(46, 107, 106, 0.1), 0 2px 4px -1px rgba(46, 107, 106, 0.06)'
 			},
 			keyframes: {
 				'accordion-down': {

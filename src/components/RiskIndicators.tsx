@@ -23,7 +23,7 @@ const RiskIndicators: React.FC = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg mb-6 p-4 print:shadow-none">
+    <div className="bg-white shadow-tga rounded-lg mb-6 p-4 print:shadow-none">
       <h2 className="text-xl font-semibold text-tga-primary mb-3">Risk and Return Indicators</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-200">
@@ -43,7 +43,10 @@ const RiskIndicators: React.FC = () => {
                   <EditableField
                     value={item.value}
                     onChange={(value) => updateRiskMetric(index, value)}
-                    className="text-right"
+                    className={`text-right ${
+                      item.value.includes('-') ? 'text-tga-error' : 
+                      parseFloat(item.value) > 0 ? 'text-tga-success' : ''
+                    }`}
                     type={item.value.includes('%') ? 'percentage' : 'number'}
                   />
                 </td>

@@ -13,7 +13,7 @@ The fund's core investments revolve around fixed income markets, with a particul
   );
 
   return (
-    <div className="bg-white shadow-md rounded-lg mb-6 p-4 print:shadow-none">
+    <div className="bg-white shadow-tga rounded-lg mb-6 p-4 print:shadow-none">
       <h2 className="text-xl font-semibold text-tga-primary mb-3">Fund Description</h2>
       <EditableField 
         value={description}

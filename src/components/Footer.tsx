@@ -27,11 +27,11 @@ Investment in the fund involves risk, including the possible loss of principal. 
 
   return (
     <>
-      <div className="bg-white shadow-md rounded-lg mb-6 p-4 print:shadow-none">
+      <div className="bg-white shadow-tga rounded-lg mb-6 p-4 print:shadow-none">
         <h2 className="text-xl font-semibold text-tga-primary mb-3">Contact Information</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <h3 className="font-semibold text-tga-gray">Phone</h3>
+            <h3 className="font-semibold text-tga-accent">Phone</h3>
             <EditableField
               value={contacts.phone}
               onChange={(val) => updateContact('phone', val)}
@@ -39,7 +39,7 @@ Investment in the fund involves risk, including the possible loss of principal. 
             />
           </div>
           <div>
-            <h3 className="font-semibold text-tga-gray">Email</h3>
+            <h3 className="font-semibold text-tga-accent">Email</h3>
             <EditableField
               value={contacts.email}
               onChange={(val) => updateContact('email', val)}
@@ -47,7 +47,7 @@ Investment in the fund involves risk, including the possible loss of principal. 
             />
           </div>
           <div>
-            <h3 className="font-semibold text-tga-gray">Website</h3>
+            <h3 className="font-semibold text-tga-accent">Website</h3>
             <EditableField
               value={contacts.website}
               onChange={(val) => updateContact('website', val)}
@@ -57,13 +57,13 @@ Investment in the fund involves risk, including the possible loss of principal. 
         </div>
       </div>
       
-      <div className="bg-gray-50 shadow-md rounded-lg mb-6 p-4 print:bg-white print:shadow-none">
+      <div className="bg-gray-50 shadow-tga rounded-lg mb-6 p-4 print:bg-white print:shadow-none">
         <h2 className="text-lg font-semibold text-tga-primary mb-3">Disclaimer</h2>
-        <div className="text-xs text-gray-600">
+        <div className="text-xs text-tga-accent">
           <EditableField
             value={disclaimer}
             onChange={setDisclaimer}
-            className="text-xs text-gray-600 whitespace-pre-wrap"
+            className="text-xs text-tga-accent whitespace-pre-wrap"
             multiline={true}
           />
         </div>
